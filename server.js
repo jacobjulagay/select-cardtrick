@@ -58,7 +58,7 @@ app.get('/:param* ', (req,res) =>{
                         console.log(err)
                     }else if(result.length){
                         const card = result[result.length-1].card + '.png'
-                        res.sendFile(path.join(_dirname+ '/cards/' + card));
+                        res.sendFile(path.join(_dirname + '/cards/' + card));
 
                     }
                     else{
@@ -71,4 +71,4 @@ app.get('/:param* ', (req,res) =>{
     })
 })
 
-app.listen(PORT, () => console.log(`Server Listening on port ${PORT}`))
+app.listen(PORT, () => console.log(`Server Listening on port ${PORT}`));
